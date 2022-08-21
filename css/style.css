@@ -14,11 +14,14 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  height: 800rem;
+  overflow-x: hidden;
 }
 .container {
   max-width: 130rem;
   margin: 0 auto;
+}
+ul {
+  list-style: none;
 }
 a:link,
 a:visited {
@@ -42,7 +45,7 @@ hr {
 .nav {
   height: 70px;
 }
-.nav .logo {
+.logo {
   width: 150px;
 }
 .nav .nav-content {
@@ -173,7 +176,8 @@ button {
 .emissions {
   margin: 20.8rem 0;
 }
-.emissions .content {
+.emissions .content,
+.contact .content {
   width: 80%;
   margin: 0 auto;
   background-color: white;
@@ -183,7 +187,9 @@ button {
   position: relative;
 }
 
-.emissions .content input {
+.emissions .content input,
+.contact .content input,
+.contact .content textarea {
   width: 100%;
   font-size: 1.8rem;
   margin-bottom: 2.4rem;
@@ -192,7 +198,8 @@ button {
   border-bottom: 2px solid #eee;
   padding: 1rem 0;
 }
-.emissions .content input:focus {
+.emissions .content input:focus,
+.contact .content input:focus {
   outline: none;
 }
 .emissions .content .btn {
@@ -245,7 +252,7 @@ button {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  margin-right: 1rem;
+  margin-right: 2.4rem;
 }
 .about-project .content {
   display: flex;
@@ -255,16 +262,115 @@ button {
 .about-project .left {
   margin-left: -15%;
 }
+.about-project .content_ .left {
+  margin-right: -15%;
+}
 .about-project .right {
   float: right;
   padding: 0 4.8rem;
 }
-
+.about-project .content_ .right {
+  padding: 0 6.4rem;
+}
 .about-project p {
   font-size: 1.8rem;
   line-height: 2.8;
   color: var(--text-color);
   font-weight: normal;
+}
+
+/*********** Start contact us ***********/
+.contact {
+  margin-top: 20.8rem;
+  margin-bottom: 6.4rem;
+  position: relative;
+}
+.contact .content .secondry-heading {
+  text-align: left;
+}
+.contact .content form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+}
+.contact .content textarea {
+  height: 18.2rem;
+  resize: none;
+}
+.contact .content textarea:focus {
+  outline: none;
+}
+.contact .content .btn {
+  text-align: center;
+  margin-top: 2.4rem;
+}
+.contact .content .btn button {
+  background: transparent;
+  border: 1px solid #31a95d;
+  color: var(--text-color);
+}
+.contact .content {
+  padding: 6.4rem;
+}
+.contact .content p {
+  margin-top: 1rem;
+}
+.contact .img8 {
+  position: absolute;
+  left: -40%;
+  bottom: 0;
+}
+.contact .img9 {
+  position: absolute;
+  right: -50%;
+  top: 20%;
+  transform: translate(0, -20%);
+  -webkit-transform: translate(0, -20%);
+  -moz-transform: translate(0, -20%);
+  -ms-transform: translate(0, -20%);
+  -o-transform: translate(0, -20%);
+}
+.hr {
+  margin: 2rem 0;
+  display: flex;
+  flex-shrink: initial;
+}
+/*********** Start hr ***********/
+
+.hr span {
+  height: 12px;
+  width: 25%;
+}
+.s-1 {
+  background-color: #b5d653;
+}
+.s-2 {
+  background-color: #79c258;
+}
+.s-3 {
+  background-color: #3dad5c;
+}
+.s-4 {
+  background-color: #019961;
+}
+
+/*********** Start footer ***********/
+.footer {
+  margin: 2.4rem 0;
+}
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.footer a:link,
+.footer a:visited {
+  font-size: 1.8rem;
 }
 /* 
     Spacing system in px:
